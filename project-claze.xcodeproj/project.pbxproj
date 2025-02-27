@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D65FA85A2D682757003FA8BC /* ClothingClassifier.mlproj in Resources */ = {isa = PBXBuildFile; fileRef = D65FA8592D682757003FA8BC /* ClothingClassifier.mlproj */; };
+		D65FA86B2D682C70003FA8BC /* SharedExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D65FA8612D682C70003FA8BC /* SharedExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D606F1A62D68253900804161 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,12 +26,35 @@
 			remoteGlobalIDString = D606F18E2D68253700804161;
 			remoteInfo = "project-claze";
 		};
+		D65FA8692D682C70003FA8BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D606F1872D68253700804161 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65FA8602D682C70003FA8BC;
+			remoteInfo = SharedExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D65FA8702D682C70003FA8BC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D65FA86B2D682C70003FA8BC /* SharedExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D606F18F2D68253700804161 /* project-claze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-claze.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D606F1A52D68253900804161 /* project-clazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project-clazeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D606F1AF2D68253900804161 /* project-clazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project-clazeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65FA8592D682757003FA8BC /* ClothingClassifier.mlproj */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ClothingClassifier.mlproj; sourceTree = "<group>"; };
+		D65FA8612D682C70003FA8BC /* SharedExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SharedExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +64,13 @@
 				Info.plist,
 			);
 			target = D606F18E2D68253700804161 /* project-claze */;
+		};
+		D65FA86F2D682C70003FA8BC /* Exceptions for "SharedExtension" folder in "SharedExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D65FA8602D682C70003FA8BC /* SharedExtension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -56,6 +91,14 @@
 		D606F1B22D68253900804161 /* project-clazeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "project-clazeUITests";
+			sourceTree = "<group>";
+		};
+		D65FA8622D682C70003FA8BC /* SharedExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D65FA86F2D682C70003FA8BC /* Exceptions for "SharedExtension" folder in "SharedExtension" target */,
+			);
+			path = SharedExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -82,15 +125,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D65FA85E2D682C70003FA8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D606F1862D68253700804161 = {
 			isa = PBXGroup;
 			children = (
+				D65FA8592D682757003FA8BC /* ClothingClassifier.mlproj */,
 				D606F1912D68253700804161 /* project-claze */,
 				D606F1A82D68253900804161 /* project-clazeTests */,
 				D606F1B22D68253900804161 /* project-clazeUITests */,
+				D65FA8622D682C70003FA8BC /* SharedExtension */,
 				D606F1902D68253700804161 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +153,7 @@
 				D606F18F2D68253700804161 /* project-claze.app */,
 				D606F1A52D68253900804161 /* project-clazeTests.xctest */,
 				D606F1AF2D68253900804161 /* project-clazeUITests.xctest */,
+				D65FA8612D682C70003FA8BC /* SharedExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,10 +168,12 @@
 				D606F18B2D68253700804161 /* Sources */,
 				D606F18C2D68253700804161 /* Frameworks */,
 				D606F18D2D68253700804161 /* Resources */,
+				D65FA8702D682C70003FA8BC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D65FA86A2D682C70003FA8BC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D606F1912D68253700804161 /* project-claze */,
@@ -176,6 +231,28 @@
 			productReference = D606F1AF2D68253900804161 /* project-clazeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D65FA8602D682C70003FA8BC /* SharedExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65FA86C2D682C70003FA8BC /* Build configuration list for PBXNativeTarget "SharedExtension" */;
+			buildPhases = (
+				D65FA85D2D682C70003FA8BC /* Sources */,
+				D65FA85E2D682C70003FA8BC /* Frameworks */,
+				D65FA85F2D682C70003FA8BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D65FA8622D682C70003FA8BC /* SharedExtension */,
+			);
+			name = SharedExtension;
+			packageProductDependencies = (
+			);
+			productName = SharedExtension;
+			productReference = D65FA8612D682C70003FA8BC /* SharedExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,6 +274,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = D606F18E2D68253700804161;
 					};
+					D65FA8602D682C70003FA8BC = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = D606F18A2D68253700804161 /* Build configuration list for PBXProject "project-claze" */;
@@ -216,6 +296,7 @@
 				D606F18E2D68253700804161 /* project-claze */,
 				D606F1A42D68253900804161 /* project-clazeTests */,
 				D606F1AE2D68253900804161 /* project-clazeUITests */,
+				D65FA8602D682C70003FA8BC /* SharedExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65FA85A2D682757003FA8BC /* ClothingClassifier.mlproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +318,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D606F1AD2D68253900804161 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65FA85F2D682C70003FA8BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,6 +355,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D65FA85D2D682C70003FA8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -278,6 +374,11 @@
 			isa = PBXTargetDependency;
 			target = D606F18E2D68253700804161 /* project-claze */;
 			targetProxy = D606F1B02D68253900804161 /* PBXContainerItemProxy */;
+		};
+		D65FA86A2D682C70003FA8BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65FA8602D682C70003FA8BC /* SharedExtension */;
+			targetProxy = D65FA8692D682C70003FA8BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -293,8 +394,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "project-claze/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,8 +421,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "project-claze/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -529,6 +628,56 @@
 			};
 			name = Release;
 		};
+		D65FA86D2D682C70003FA8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N676ZFA7W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SharedExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SharedExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quarang.project-claze.SharedExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D65FA86E2D682C70003FA8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N676ZFA7W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SharedExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SharedExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "quarang.project-claze.SharedExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -564,6 +713,15 @@
 			buildConfigurations = (
 				D606F1C12D68253900804161 /* Debug */,
 				D606F1C22D68253900804161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65FA86C2D682C70003FA8BC /* Build configuration list for PBXNativeTarget "SharedExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65FA86D2D682C70003FA8BC /* Debug */,
+				D65FA86E2D682C70003FA8BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
