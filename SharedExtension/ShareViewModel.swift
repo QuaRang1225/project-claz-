@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class ShareViewModel:ObservableObject{
+    
+    @Published var shared = Shared()
+    
+    
+    
+}

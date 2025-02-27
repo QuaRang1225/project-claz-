@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import UIKit
+
+struct Shared:Codable{
+    
+    var title:String?
+    var descript:String?
+    var image:Data?
+    var url:URL?
+    
+}
