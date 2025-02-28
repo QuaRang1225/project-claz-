@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D65FA85A2D682757003FA8BC /* ClothingClassifier.mlproj in Resources */ = {isa = PBXBuildFile; fileRef = D65FA8592D682757003FA8BC /* ClothingClassifier.mlproj */; };
 		D65FA86B2D682C70003FA8BC /* SharedExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D65FA8612D682C70003FA8BC /* SharedExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		D606F18F2D68253700804161 /* project-claze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-claze.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D606F1A52D68253900804161 /* project-clazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project-clazeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D606F1AF2D68253900804161 /* project-clazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project-clazeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D65FA8592D682757003FA8BC /* ClothingClassifier.mlproj */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ClothingClassifier.mlproj; sourceTree = "<group>"; };
 		D65FA8612D682C70003FA8BC /* SharedExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SharedExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,7 +136,6 @@
 		D606F1862D68253700804161 = {
 			isa = PBXGroup;
 			children = (
-				D65FA8592D682757003FA8BC /* ClothingClassifier.mlproj */,
 				D606F1912D68253700804161 /* project-claze */,
 				D606F1A82D68253900804161 /* project-clazeTests */,
 				D606F1B22D68253900804161 /* project-clazeUITests */,
@@ -306,7 +303,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D65FA85A2D682757003FA8BC /* ClothingClassifier.mlproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
